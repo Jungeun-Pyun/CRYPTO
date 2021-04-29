@@ -55,8 +55,9 @@ module.exports.getPasswordPbkdf2 = (pw, salt) => {
     return crypto.pbkdf2Sync(pw, salt, 99381, 32, 'sha512').toString('base64')
 
 }
-```                  
-             
+```          
+         
+         
 **1\. crypto 모듈을 불러온다.**
 
 **2\. 패스워드를 암호화하는 함수**
